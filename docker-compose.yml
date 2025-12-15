@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  app:
+    build: .
+    ports:
+      - "5001:5001"
+    environment:
+      - FLASK_ENV=prod
+      - SECRET_KEY=your-production-secret-key
+      - ENCRYPTION_KEY=your-production-encryption-key
+      - DATABASE_URL=sqlite:///visco_prod.db
+    volumes:
+      - ./visco_prod.db:/app/visco_prod.db
+    restart: always
+    user: appuser

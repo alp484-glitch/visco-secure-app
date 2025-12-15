@@ -1,0 +1,43 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+pip-wheel-metadata/
+
+.venv
+
+# 数据库
+*.db
+*.sqlite3
+
+# 报告
+sast_report.json
+dast_report.html
+
+# Docker
+docker-compose.override.yml
+*.log
+
+# 编辑器
+.idea/
+.vscode/
+*.swp
+*.swo
