@@ -28,9 +28,6 @@ pip-wheel-metadata/
 *.db
 *.sqlite3
 
-# 报告
-sast_report.json
-dast_report.html
 
 # Docker
 docker-compose.override.yml
